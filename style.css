@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'organ';
+  src: url(organ.ttf);
+}
+
+body {
+  background: #064413;
+  color: #48ff00;
+  font-family: 'organ', sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+g {
+  --s: 70px;
+  --r: 12px;
+  display: grid;
+  width: fit-content;
+  border: 1px solid;
+  margin: auto;
+  grid: auto-flow var(--s)/repeat(5, var(--s));
+}
+
+g:before {
+  content: "Original Image";
+  color: #0ddf30;
+  font-size: 13px;
+  border: #00c932 1px solid;
+  margin-top: 80px;
+  font-weight: bold;
+  text-shadow: 0 0 2px #000, 0 0 2px #000, 0 0 2px #000;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: calc(5*var(--s)*0.6);
+  aspect-ratio: 1;
+  background: var(--i) 0/100% 100%;
+  display: grid;
+  place-content: center;
+}
+
+
+
+
+
+
+
