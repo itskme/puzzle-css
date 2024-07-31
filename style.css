@@ -97,3 +97,133 @@ z:first-child b {
     radial-gradient(var(--r) at 50% calc(100% - var(--r)),#000 98%,#0000) ;
 }
 
+z:nth-child(-n+4):not(:first-child) b {
+  place-self: start end;
+  height: calc(100% + var(--r));
+  width: calc(100% + var(--r));
+  --m:
+    radial-gradient(var(--r) at calc(100% - var(--r)) calc(50% + var(--r)/2),#0000 98%,#000)
+     var(--r) calc(-1*var(--r)) no-repeat,
+    radial-gradient(var(--r) at var(--r) calc(50% - var(--r)/2),#000 98%,#0000),
+    radial-gradient(var(--r) at calc(50% + var(--r)/2) calc(100% - var(--r)),#000 98%,#0000) ;
+}
+
+z:nth-child(5) b {
+  place-self: start end;
+  height: calc(100% + var(--r));
+  width: calc(100% + var(--r));
+  --m:
+    linear-gradient(#000 0 0) var(--r) calc(-1*var(--r)) no-repeat,
+    radial-gradient(var(--r) at var(--r) calc(50% - var(--r)/2),#000 98%,#0000),
+    radial-gradient(var(--r) at calc(50% + var(--r)/2) calc(100% - var(--r)),#000 98%,#0000) ;
+}
+
+z:nth-child(5n+1):not(:first-child):not(:nth-last-child(5)) b {
+  height: calc(100% + var(--r));
+  width: 100%;
+  --m:
+    radial-gradient(var(--r) at 100% calc(50% - var(--r)/2),#0000 98%,#000) 50%/ 100% calc(100% - 2*var(--r)) no-repeat,
+    radial-gradient(var(--r) at 50% 0,#0000 98%,#000) 0 0/ 100% var(--r) no-repeat,
+    radial-gradient(var(--r) at 50% calc(100% - var(--r)),#000 98%,#0000) ;
+}
+
+z:nth-last-child(5) b {
+  height: 100%;
+  width: 100%;
+  --m:
+    radial-gradient(var(--r) at 100% calc(50% - var(--r)),#0000 98%,#000) 0 var(--r) no-repeat,
+    radial-gradient(var(--r) at 50% 0,#0000 98%,#000) 0 0/ 100% var(--r) no-repeat;
+}
+
+z:nth-child(5n):not(:nth-child(5)):not(:last-child) b {
+  place-self: start end;
+  height: calc(100% + var(--r));
+  width: calc(100% + var(--r));
+  --m:
+    radial-gradient(var(--r) at calc(50% - var(--r)/2) var(--r),#0000 98%,#000) var(--r) calc(-1*var(--r)) no-repeat,
+    radial-gradient(var(--r) at var(--r) calc(50% - var(--r)/2),#000 98%,#0000),
+    radial-gradient(var(--r) at calc(50% + var(--r)/2) calc(100% - var(--r)),#000 98%,#0000) ;
+}
+
+z:last-child b {
+  place-self: end;
+  height: 100%;
+  width: calc(100% + var(--r));
+  --m:
+    radial-gradient(var(--r) at calc(50% - var(--r)/2) 0,#0000 98%,#000) var(--r) 0 no-repeat,
+    radial-gradient(var(--r) at var(--r) 50%,#000 98%,#0000) ;
+}
+
+z:nth-last-child(-n+4):not(:last-child) b {
+  place-self: end;
+  height: 100%;
+  width: calc(100% + var(--r));
+  --m:
+    radial-gradient(var(--r) at calc(50% - var(--r)/2) 0,#0000 98%,#000) var(--r) 0/100% var(--r) no-repeat,
+    radial-gradient(var(--r) at calc(100% - var(--r)) calc(50% - var(--r)/2),#0000 98%,#000) var(--r) 100%/100% calc(100% - var(--r)) no-repeat,
+    radial-gradient(var(--r) at var(--r) 50%,#000 98%,#0000) ;
+}
+
+z:nth-of-type(1) b {
+  transform: translate(200%, 200%) rotate(63deg) translate(422%) rotate(-60deg);
+}
+
+z:nth-of-type(1) b:before {
+  background-position: 0% 0%;
+}
+
+z:nth-of-type(2) b {
+  transform: translate(100%, 200%) rotate(67deg) translate(449%) rotate(-58deg);
+}
+
+z:nth-of-type(2) b:before {
+  background-position: 25% 0%;
+}
+
+z:nth-of-type(3) b {
+  transform: translate(0%, 200%) rotate(86deg) translate(412%) rotate(-81deg);
+}
+
+z:nth-of-type(3) b:before {
+  background-position: 50% 0%;
+}
+
+z:nth-of-type(4) b {
+  transform: translate(-100%, 200%) rotate(93deg) translate(403%) rotate(-98deg);
+}
+
+z:nth-of-type(4) b:before {
+  background-position: 75% 0%;
+}
+
+z:nth-of-type(5) b {
+  transform: translate(-200%, 200%) rotate(68deg) translate(404%) rotate(-67deg);
+}
+
+z:nth-of-type(5) b:before {
+  background-position: 100% 0%;
+}
+
+z:nth-of-type(6) b {
+  transform: translate(200%, 100%) rotate(54deg) translate(433%) rotate(-44deg);
+}
+
+z:nth-of-type(6) b:before {
+  background-position: 0% 25%;
+}
+
+z:nth-of-type(7) b {
+  transform: translate(100%, 100%) rotate(101deg) translate(470%) rotate(-98deg);
+}
+
+z:nth-of-type(7) b:before {
+  background-position: 25% 25%;
+}
+
+z:nth-of-type(8) b {
+  transform: translate(0%, 100%) rotate(93deg) translate(444%) rotate(-85deg);
+}
+
+
+
+
