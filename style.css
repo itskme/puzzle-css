@@ -224,6 +224,91 @@ z:nth-of-type(8) b {
   transform: translate(0%, 100%) rotate(93deg) translate(444%) rotate(-85deg);
 }
 
+z:nth-of-type(8) b:before {
+  background-position: 50% 25%;
+}
+
+z:nth-of-type(9) b {
+  transform: translate(-100%, 100%) rotate(3deg) translate(465%) rotate(0deg);
+}
+
+z:nth-of-type(9) b:before {
+  background-position: 75% 25%;
+}
+
+z:nth-of-type(10) b {
+  transform: translate(-200%, 100%) rotate(119deg) translate(448%) rotate(-112deg);
+}
+
+z:nth-of-type(10) b:before {
+  background-position: 100% 25%;
+}
+
+z:nth-of-type(11) b {
+  transform: translate(200%, 0%) rotate(22deg) translate(414%) rotate(-26deg);
+}
+
+z:nth-of-type(11) b:before {
+  background-position: 0% 50%;
+}
+
+z:nth-of-type(12) b {
+  transform: translate(100%, 0%) rotate(68deg) translate(401%) rotate(-63deg);
+}
+
+z:nth-of-type(12) b:before {
+  background-position: 25% 50%;
+}
+
+z:nth-of-type(13) b {
+  transform: translate(0%, 0%) rotate(126deg) translate(458%) rotate(-123deg);
+}
+
+z:nth-of-type(13) b:before {
+  background-position: 50% 50%;
+}
+
+z:nth-of-type(14) b {
+  transform: translate(-100%, 0%) rotate(37deg) translate(435%) rotate(-46deg);
+}
+
+z:nth-of-type(14) b:before {
+  background-position: 75% 50%;
+}
+
+z:nth-of-type(15) b {
+  transform: translate(-200%, 0%) rotate(10deg) translate(404%) rotate(-19deg);
+}
+
+z:nth-of-type(15) b:before {
+  background-position: 100% 50%;
+}
+
+z:nth-of-type(16) b {
+  transform: translate(200%, -100%) rotate(118deg) translate(461%) rotate(-111deg);
+}
+
+z:nth-of-type(16) b:before {
+  background-position: 0% 75%;
+}
+
+z:nth-of-type(17) b {
+  transform: translate(100%, -100%) rotate(60deg) translate(419%) rotate(-66deg);
+}
+
+z:nth-of-type(17) b:before {
+  background-position: 25% 75%;
+}
+
+z:nth-of-type(18) b {
+  transform: translate(0%, -100%) rotate(167deg) translate(423%) rotate(-170deg);
+}
+
+z:nth-of-type(18) b:before {
+  background-position: 50% 75%;
+}
+
+
 
 
 
