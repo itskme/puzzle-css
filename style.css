@@ -42,7 +42,7 @@ g:before {
   text-shadow: 0 0 2px #000, 0 0 2px #000, 0 0 2px #000;
   position: fixed;
   top: 10px;
-  left: 10px;
+  left: 100px;
   width: calc(5*var(--s)*0.6);
   aspect-ratio: 1;
   background: var(--i) 0/100% 100%;
@@ -308,7 +308,76 @@ z:nth-of-type(18) b:before {
   background-position: 50% 75%;
 }
 
+z:nth-of-type(19) b {
+  transform: translate(-100%, -100%) rotate(51deg) translate(444%) rotate(-50deg);
+}
 
+z:nth-of-type(19) b:before {
+  background-position: 75% 75%;
+}
+
+z:nth-of-type(20) b {
+  transform: translate(-200%, -100%) rotate(144deg) translate(454%) rotate(-151deg);
+}
+
+z:nth-of-type(20) b:before {
+  background-position: 100% 75%;
+}
+
+z:nth-of-type(21) b {
+  transform: translate(200%, -200%) rotate(88deg) translate(461%) rotate(-84deg);
+}
+
+z:nth-of-type(21) b:before {
+  background-position: 0% 100%;
+}
+
+z:nth-of-type(22) b {
+  transform: translate(100%, -200%) rotate(33deg) translate(453%) rotate(-36deg);
+}
+
+z:nth-of-type(22) b:before {
+  background-position: 25% 100%;
+}
+
+z:nth-of-type(23) b {
+  transform: translate(0%, -200%) rotate(9deg) translate(411%) rotate(-2deg);
+}
+
+z:nth-of-type(23) b:before {
+  background-position: 50% 100%;
+}
+
+z:nth-of-type(24) b {
+  transform: translate(-100%, -200%) rotate(67deg) translate(434%) rotate(-67deg);
+}
+
+z:nth-of-type(24) b:before {
+  background-position: 75% 100%;
+}
+
+z:nth-of-type(25) b {
+  transform: translate(600%, -200%) rotate(179deg) translate(450%) rotate(-185deg);
+}
+
+z:nth-of-type(25) b:before {
+  background-position: 100% 100%;
+}
+
+z b {
+  transition: 9999s 9999s;
+}
+
+z:active a {
+  width: 100%;
+  transition: 0s;
+}
+
+z a:hover ~ b {
+  transform: translate(0);
+  filter: none;
+  transition: 0s;
+}
 
 
 
